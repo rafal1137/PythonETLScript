@@ -1,3 +1,5 @@
+NOT FINISHED
+
 ENG:
 Simple Python script for running Enemy Territory Legacy and making automate connection to server.
 
