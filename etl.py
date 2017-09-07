@@ -11,7 +11,7 @@ def main():
 	try:
 	  #TODO: Implement it for Linux too
 	  #		 Get etl instalation from HKEY_KEY
-	  subprocess.call("HKEY_KEY +set fs_basepath F:\Enemy Territory - Legacy +set r_mode 7")
+	  subprocess.call("F:\Enemy Territory - Legacy\etl.exe +set fs_basepath F:\Enemy Territory - Legacy +set r_mode 7")
 	  sys.sleep(5)
 	  
 	  for x, y in zip(x,y):
@@ -49,7 +49,7 @@ def main():
 
 							 except Exception(e):
 								  print("Couldn't download file. Unkown Reason.\n %s" % str(e))
-								  sys.exit(1)
+								  sys.exit(-1)
 
 						 else if(sys.platform == "linux"):
 
@@ -62,7 +62,7 @@ def main():
 										  f.write(data)
 							 except Exception(e):
 								 print("Couldn't download file. Unkown Reason.\n %s" % str(e))
-								 sys.exit(1)
+								 sys.exit(-1)
 
 						 else:
 
